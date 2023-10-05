@@ -1,14 +1,77 @@
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*reset*/
-/*common*/
-/*common*/
-/*body*/
-body{
-    font-family: 'Roboto', sans-serif;
+/*debug*/
+.contenitore{
+    background-color: yellow;
 }
+.user{
+    height: 100px;
+    background-color: red;
+}
+/*debug*/
+/*common*/
+.flex {
+    display: flex;
+}
+
+header button {
+    border: none;
+    color: white;
+    background-color: #4a4a4a;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+/*common*/
+
 /*body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+/*body*/
+
+/*header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999;
+}
+
+header .button-box {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: white;
+}
+
+/*header*/
+
+/*main*/
+main{
+    height: 100vh;
+    margin: 40px 0;
+}
+
+.contenitore{
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.user{
+    width: calc(100% / 7 - 4px);
+    margin: 5px 2px;
+}
+/*main*/
